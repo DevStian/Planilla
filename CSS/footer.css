@@ -1,0 +1,57 @@
+#formulario {
+  background-color: var(--Bg-Tertiary);
+  /* padding: 30px 200px; */
+}
+
+#formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#formulario div {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+}
+
+#formulario .Container-Button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#derechos {
+  background-color: var(--Bg-Quaternary);
+  text-align: center;
+}
+
+#derechos p,
+#derechos span {
+  color: var(--FontColor-Derechos);
+  font-size: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#derechos span {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  #formulario div,
+  #formulario .Container-Button {
+    width: 48%;
+    height: 60px;
+  }
+  #formulario .Container-Button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3px;
+  }
+}
+
+@media (max-width: 362px) {
+  #formulario div,
+  #formulario .Container-Button {
+    width: 100%;
+  }
+}

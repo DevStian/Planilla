@@ -1,0 +1,70 @@
+@media (min-width: 1200px) {
+  .ContenedorTotal {
+    width: 1200px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--FontColor-All);
+  font-family: "Teko";
+  letter-spacing: 2px;
+  text-decoration: none;
+  /* box-shadow: 0 0 0 1px red; */
+}
+
+.container {
+  padding: 20px 100px;
+}
+
+body {
+  background-color: rgb(4, 0, 26);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#barraCarga {
+  background-color: black;
+  position: fixed;
+  bottom: 2px;
+  height: 5px;
+  width: 100%;
+  padding: 1px 1px;
+  z-index: 10;
+}
+#barraCarga .carga {
+  width: 0;
+  height: 5px;
+  animation-name: carga;
+  animation-timeline: scroll(block);
+  border-radius: 20px;
+}
+
+@keyframes carga {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    width: 100%;
+    background-color: green;
+  }
+}

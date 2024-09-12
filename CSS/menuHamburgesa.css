@@ -1,0 +1,41 @@
+#icon_menu_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid var(--Primary);
+  border-radius: 5px;
+  padding: 5px;
+  width: 41px;
+  height: 36px;
+  gap: 6px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease; /* Transición para la propiedad transform */
+}
+.lines-menu {
+  background-color:var(--Primary);
+  height: 3px;
+  width: 26px;
+  border-radius: 5px;
+}
+.transition-close .lines-menu:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.transition-close .lines-menu:nth-child(2) {
+  opacity: 0;
+}
+
+.transition-close .lines-menu:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+@media (min-width: 769px) {
+  #icon_menu_border {
+    display: none;
+  }
+}

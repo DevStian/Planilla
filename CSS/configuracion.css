@@ -1,0 +1,31 @@
+#Configuración {
+  position: absolute;
+  background-color: rgb(60, 54, 54);
+  padding: 10px;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  width: 15%;
+  div {
+    border: 1px solid green;
+  }
+  input {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+#Configuración.ocultar,
+#Menu.ocultar {
+  display: none;
+}
+
+/* body{
+    display: flex;
+} */

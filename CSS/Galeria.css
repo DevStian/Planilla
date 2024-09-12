@@ -1,0 +1,29 @@
+#Galería {
+  background-color: var(--Bg-Main);
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: dense;
+  gap: 10px;
+}
+
+.item-grid {
+  overflow: hidden;
+  border: 4px solid var(--Primary);
+}
+
+@media (min-width: 756px) {
+  .container-grid {
+    gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 600px;
+  }
+  .ancho {
+    grid-column: span 2;
+  }
+  .alto {
+    grid-row: span 2;
+  }
+}

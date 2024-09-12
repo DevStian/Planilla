@@ -1,0 +1,47 @@
+html[data-theme="light"] {
+  --Bg-Main: white;
+  --Bg-Secondary: rgb(211, 211, 211);
+  --Bg-Tertiary: rgb(183, 183, 183);
+  --Bg-Quaternary: rgb(71, 71, 71);
+
+  --Primary: grey;
+  --Primary-Hover: rgb(60, 60, 60);
+  --Primary-Active: black;
+
+  --FontColor-Primary: black;
+  --FontColor-Hover: white;
+  --FontColor-Active: white;
+  --FontColor-Title: white;
+  --FontColor-Derechos: white;
+  --FontColor-Menu-hover: grey;
+  --FontColor-All: black;
+}
+
+html {
+  scrollbar-color: red yellow;
+  scrollbar-color: var(--Bg-Quaternary) var(--Bg-Tertiary);
+}
+
+html[data-theme="dark"] {
+  --Bg-Main: rgb(34, 34, 34);
+  --Bg-Secondary: rgb(50, 50, 50);
+  --Bg-Tertiary: rgb(77, 77, 77);
+  --Bg-Quaternary: rgb(23, 23, 23);
+
+  --Primary: grey;
+  --Primary-Hover: rgb(180, 180, 180);
+  --Primary-Active: white;
+
+  --FontColor-Primary: white;
+  --FontColor-Hover: black;
+  --FontColor-Active: black;
+  --FontColor-Title: white;
+  --FontColor-Derechos: white;
+  --FontColor-Menu-hover: lightgrey;
+  --FontColor-All: white;
+}
+
+body {
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
+}

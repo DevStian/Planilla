@@ -1,0 +1,158 @@
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Bg-Main);
+  padding: 30px 100px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+header nav ul li {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header nav ul li a:hover {
+  color: var(--FontColor-Menu-hover);
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.headerBottom {
+  max-width: 1200px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.headerBottom .titleAndText {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.headerBottom .titleAndText h1 {
+  margin-bottom: 10px;
+  color: var(--FontColor-Title);
+}
+.headerBottom .titleAndText p {
+  color: var(--FontColor-Title);
+}
+.MenuOculto {
+  display: none;
+  background-color: var(--Bg-Main);
+  border-top: 3px solid var(--FontColor-All);
+}
+.bajar {
+  animation: bajar 0.5s ease-in-out;
+}
+.subir {
+  animation: subir 0.5s ease-in-out;
+}
+.MenuOculto nav ul {
+  display: block;
+}
+.MenuOculto nav ul a {
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+.MenuOculto nav ul a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 5px;
+  background-color: var(--FontColor-All);
+}
+.Mostrar {
+  display: none;
+  transition: 1s;
+}
+@media (max-width: 992px) {
+
+  .container {
+    padding: 20px 50px;
+  }
+  .headerTop nav ul {
+    gap: 10px;
+  }
+  .headerTop nav ul li a {
+    font-size: 0.8rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 20px;
+  }
+  .headerTop nav ul {
+    display: none;
+  }
+  .headerBottom {
+    height: 250px;
+  }
+  .headerBottom .titleAndText {
+    padding: 10px;
+  }
+  .headerBottom .titleAndText h1 {
+    margin-bottom: 2px;
+  }
+  .Mostrar {
+    display: block;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px 15px;
+  }
+  .headerTop .logo {
+    font-size: 0.8rem;
+  }
+  .headerBottom .titleAndText {
+    width: 250px;
+    padding: 5px;
+  }
+  .headerBottom .titleAndText h1 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  .headerBottom .titleAndText p {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+  }
+}
+
+@keyframes bajar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@keyframes subir {
+  0% {
+    display: block;
+    height: 200px;
+  }
+  100% {
+    display: block;
+    height: 0;
+  }
+}
